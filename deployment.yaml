@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: devops-programme-app:1.0.0-17
+      app: devops-programme-app
   template:
     metadata:
       labels:
-        app: devops-programme-app:1.0.0-17
+        app: devops-programme-app
     spec:
       containers:
-        - name: devops-programme-app:1.0.0-17
+        - name: devops-programme-app
           image: zylmaimun/devops-programme-app:1.0.0-17
           resources:
             limits:
