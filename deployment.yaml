@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-programme-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-programme-app
+  template:
+    metadata:
+      labels:
+        app: devops-programme-app
+    spec:
+      containers:
+        - name: devops-programme-app
+          image: zylmaimun/devops-programme-app:1.0.0-12
+          resources:
+            limits:
+              cpu: "1"
+            requests:
+              cpu: "500m"
+          ports:
+            - containerPort: 3000
