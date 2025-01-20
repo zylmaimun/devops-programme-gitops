@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: devops-programme-app:1.0.0-18
+      app: devops-programme-app-1.0.0-18
   template:
     metadata:
       labels:
-        app: devops-programme-app:1.0.0-18
+        app: devops-programme-app-1.0.0-18
     spec:
       containers:
         - name: devops-programme-app:1.0.0-18
