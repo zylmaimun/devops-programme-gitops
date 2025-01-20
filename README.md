@@ -1,1 +1,1 @@
-# devops-programme-gitops
+# devops-programme-app
