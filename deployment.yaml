@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops-programme-app
+  name: devops-programme-app:1.0.0-20
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: devops-programme-app:1.0.0-19
+      app: devops-programme-app:1.0.0-20
   template:
     metadata:
       labels:
-        app: devops-programme-app:1.0.0-19
+        app: devops-programme-app:1.0.0-20
     spec:
       containers:
-        - name: devops-programme-app:1.0.0-19
-          image: zylmaimun/devops-programme-app:1.0.0-19
+        - name: devops-programme-app:1.0.0-20
+          image: zylmaimun/devops-programme-app:1.0.0-20
           resources:
             limits:
               cpu: "1"
