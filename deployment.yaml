@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops-programme-deployment
+  name: devops-programme-app
 spec:
   replicas: 1
   selector:
