@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-programme-app
-          image: zylmaimun/devops-programme-app:1.0.0-12
+          image: zylmaimun/devops-programme-app:1.0.0-10
           resources:
             limits:
               cpu: "1"
