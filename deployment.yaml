@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: devops-programme-app:1.0.0-26
+      app: devops-programme-app-1.0.0-26
   template:
     metadata:
       labels:
