@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: devops-programme-app-1.0.0-26
+      app: devops-programme-app:1.0.0-27
   template:
     metadata:
       labels:
-        app: devops-programme-app:1.0.0-26
+        app: devops-programme-app:1.0.0-27
     spec:
       containers:
-        - name: devops-programme-app:1.0.0-26
-          image: zylmaimun/devops-programme-app:1.0.0-26
+        - name: devops-programme-app:1.0.0-27
+          image: zylmaimun/devops-programme-app:1.0.0-27
           resources:
             limits:
               cpu: "1"
